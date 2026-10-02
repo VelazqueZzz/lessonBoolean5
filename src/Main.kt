@@ -13,7 +13,6 @@ fun main() {
     print("Благоприятна ли погода (true/false): ")
     val isWeatherGood = readln().toBoolean()
 
-    // Единое составное условие из логических операторов
     val canSail = (!hasDamage && crew in 55..70 && provision > 50 && (isWeatherGood || !isWeatherGood))
             || (hasDamage && crew == 70 && isWeatherGood && provision >= 50)
 
